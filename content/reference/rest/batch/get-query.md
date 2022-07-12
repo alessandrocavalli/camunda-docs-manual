@@ -62,7 +62,7 @@ GET `/batch`
     <td>sortBy</td>
     <td>
       Sort the results lexicographically by a given criterion.
-      Valid values are <code>batchId</code> and <code>tenantId</code>.
+      Valid values are <code>batchId</code>, <code>tenantId</code> and <code>startTime</code>.
       Must be used in conjunction with the <code>sortOrder</code> parameter.
     </td>
   </tr>
@@ -138,7 +138,8 @@ Status 200.
     "batchJobDefinitionId": "aBatchJobDefinitionId",
     "suspended": false,
     "tenantId": "aTenantId",
-    "createUserId": "aUserId"
+    "createUserId": "aUserId",
+    "startTime":"2013-01-23T13:42:42.000+0200"
   }
 ]
 ```
